@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+
+
+
+
+<html>
+
+
+
+
+<head>
+
+
+
+
+    <script type="text/javascript">
+
+
+
+
+        window.onload = function () {
+
+
+
+
+            var chart = new CanvasJS.Chart("chartContainer",
+
+
+
+
+                {
+
+
+
+
+                    title: {
+
+
+
+
+                        text: "Building Volume and Time of Day",
+
+
+
+
+                        horizontalAlign: "right"
+
+
+
+
+                    },
+
+
+
+
+                    axisX: {
+
+
+
+
+
+
+                        title: "Time of Day",
+
+
+
+
+                        valueFormatString: "#:##",
+
+
+
+
+                        minimum: 0600,
+
+
+
+
+                        maximum: 2000
+
+
+
+
+                    },
+
+
+
+
+                    axisY: {
+
+
+
+
+                        title: "Number of Cases",
+
+
+
+
+                        valueFormatString: "#,##0.##",
+
+
+
+
+                        prefix: ""
+
+
+
+
+                    },
+
+
+
+
+                    legend: {
+
+
+
+
+                        verticalAlign: "bottom",
+
+
+
+
+                        horizontalAlign: "left"
+
+
+
+
+
+
+                    },
+
+
+
+
+                    data: [
+
+
+
+
+                        {
+
+
+
+
+                            type: "scatter",
+
+
+
+
+                            color: "#778899",
+
+
+
+
+                            legendText: "Each triangle represents a different date",
+
+
+
+
+                            showInLegend: "true",
+
+
+
+
+                            markerType: "triangle",
+
+
+
+
+                            dataPoints: [
+
+
+
+
+
+
+                                { x: 0600, y: 94 },
+
+
+
+
+                                { x: 0600, y: 9 },
+
+
+
+
+                                { x: 0600, y: 118 },
+
+
+
+
+                                { x: 0600, y: 103 },
+
+
+
+
+                                { x: 0600, y: 154 },
+
+
+
+
+                                { x: 0600, y: 224 },
+
+
+
+
+                                { x: 0600, y: 12 },
+
+
+
+
+                                { x: 0600, y: 126 },
+
+
+
+
+                                { x: 0600, y: 185 },
+
+
+
+
+                                { x: 0600, y: 79 },
+
+
+
+
+                                { x: 0600, y: 263 },
+
+
+
+
+                                { x: 0600, y: 274 },
+
+
+
+
+                                { x: 0800, y: 56 },
+
+
+
+
+                                { x: 0800, y: 14 },
+
+
+
+
+                                { x: 0800, y: 107 },
+
+
+
+
+                                { x: 0800, y: 189 },
+
+
+
+
+                                { x: 0800, y: 19 },
+
+
+
+
+                                { x: 0800, y: 118 },
+
+
+
+
+                                { x: 0800, y: 128 },
+
+
+
+
+                                { x: 0800, y: 215 },
+
+
+
+
+                                { x: 1000, y: 70 },
+
+
+
+
+                                { x: 1000, y: 97 },
+
+
+
+
+                                { x: 1000, y: 321 },
+
+
+
+
+                                { x: 1000, y: 131 },
+
+                                { x: 1200, y: 38 },
+
+                                { x: 1200, y: 97 },
+
+                                { x: 1200, y: 125 },
+
+                                { x: 1200, y: 315 },
+
+                                { x: 1200, y: 130 },
+
+                                { x: 1400, y: 62 },
+
+                                { x: 1400, y: 96 },
+
+                                { x: 1400, y: 171 },
+
+                                { x: 1400, y: 86 },
+
+                                { x: 1400, y: 135 },
+
+                                { x: 1400, y: 140 },
+
+                                { x: 1600, y: 67 },
+
+                                { x: 1600, y: 101 },
+
+                                { x: 1600, y: 125 },
+
+                                { x: 1600, y: 191 },
+
+                                { x: 1600, y: 140 },
+
+                                { x: 1600, y: 357 },
+
+                                { x: 1800, y: 55 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            ]
+
+
+
+
+                        }
+
+
+
+
+                    ]
+
+
+
+
+                });
+
+
+
+
+
+
+            chart.render();
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+</html>
